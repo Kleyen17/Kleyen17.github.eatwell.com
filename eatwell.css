@@ -1,4 +1,4 @@
-/* CSS for Eat Well Community */
+/* CSS for Eat Well Community - Unified Color Scheme */
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFF00; /* Bright yellow base color */
@@ -7,29 +7,24 @@ body {
     padding: 0;
 }
 
+/* Header Styling */
 header {
     text-align: center;
-    background-color: #FFD300; /* Secondary yellow-gold color for header */
+    background-color: #FFD300; /* Yellow-gold header */
     color: #333333;
     padding: 20px;
-    border-bottom: 5px solid #A4F600; /* Add green framing to the header */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-bottom: 5px solid #A4F600; /* Green accent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
+/* Navigation Bar */
 nav {
     text-align: center;
-    background-color: #A4F600; /* Secondary vibrant green for navigation */
+    background-color: #A4F600; /* Green navigation bar */
     padding: 20px;
-    border-top: 5px solid #FFD300; /* Add yellow framing */
+    border-top: 5px solid #FFD300;
     border-bottom: 5px solid #FFD300;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for structure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -39,31 +34,38 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 15px;
-}
-
-nav ul li {
     display: inline;
-    margin: 0 15px; /* Increase spacing between links */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #333333; /* Dark text for readability */
+    color: #333333;
     text-decoration: none;
-    padding: 10px 15px; /* Add padding to link area */
-    border-radius: 8px; /* Rounded corners for links */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #FFD300; /* Yellow-gold for hover effect */
+    background-color: #FFD300;
     color: white;
 }
 
+/* Main Content */
 main {
     padding: 30px;
 }
 
+section {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A4F600;
+}
+
+/* Tables for Resource Page */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -85,48 +87,46 @@ tr:nth-child(even) {
     background-color: #FFF8B0;
 }
 
-
-
-section {
-    background-color: #FFFFFF; /* White for content sections */
-    margin-bottom: 20px;
+/* Contact Page Form */
+form {
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add structure with shadow */
-    border: 2px solid #A4F600; /* Green border for framing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A4F600;
 }
 
-footer {
-    text-align: center;
-    background-color: #FFD300; /* Yellow-gold footer */
-    color: #333333;
-    padding: 20px;
-    margin-top: 20px;
-    border-top: 5px solid #A4F600; /* Green framing at the top */
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 0 0 8px 8px; /* Smooth corners at the bottom */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #FFD300;
+    border-radius: 5px;
 }
-.button {
-    display: inline-block;
-    background-color: #A4F600; /* Green */
+
+input[type="submit"] {
+    background-color: #A4F600;
     color: #333333;
     padding: 10px 15px;
     border-radius: 8px;
-    text-decoration: none;
+    border: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #FFD300; /* Yellow-Gold Hover */
+input[type="submit"]:hover {
+    background-color: #FFD300;
     color: white;
-    transform: scale(1.05); /* Slightly enlarges */
 }
 
-#contact {
-    font-size: 90%;
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #FFD300;
+    color: #333333;
+    padding: 20px;
     margin-top: 20px;
-    padding: 10px;
-    border: 2px solid #FFD300; /* Yellow-gold border for framing */
-    border-radius: 4px;
+    border-top: 5px solid #A4F600;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
 }

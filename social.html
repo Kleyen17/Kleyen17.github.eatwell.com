@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Well Social</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eat Well Social Hub</h1>
+        <p>Connect, share, and build community through wellness and nutrition!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="involvement.html">How To Get Involved</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Live Community Chat</h2>
+            <p>Join the conversation! Connect with members and discuss health, wellness, and nutrition.</p>
+            <div class="chat-box">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Type a message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Share Your Photos</h2>
+            <p>Upload photos of your favorite healthy meals, meal preps, or wellness moments!</p>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" id="photo-upload" name="photo-upload">
+                <input type="submit" value="Upload Photo">
+            </form>
+            <div id="photo-gallery">
+                <p>Recent Community Photos:</p>
+                <!-- Placeholder for uploaded photos -->
+            </div>
+        </section>
+
+        <section>
+            <h2>Find & Connect with Members</h2>
+            <p>Join local meetups, participate in forums, and find members with shared interests.</p>
+            <ul>
+                <li><a href="https://www.meetup.com/topics/nutrition/" target="_blank">Find Local Nutrition Groups</a></li>
+                <li><a href="https://discord.com/invite/healthyliving" target="_blank">Join Our Discord Community</a></li>
+                <li><a href="https://www.facebook.com/groups/nutritioncommunity/" target="_blank">Facebook Wellness Groups</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eat Well Community</p>
+        <p>Contact us at <a href="mailto:info@eatwellcommunity.com">info@eatwellcommunity.com</a></p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            var input = document.getElementById("chat-input");
+            var message = input.value;
+            if (message) {
+                var chatBox = document.getElementById("chat-messages");
+                var newMessage = document.createElement("p");
+                newMessage.textContent = message;
+                chatBox.appendChild(newMessage);
+                input.value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

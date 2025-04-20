@@ -1,10 +1,10 @@
 /* CSS for Eat Well Community - Unified Color Scheme */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFF00; /* Bright yellow base color */
+    background-color: #FFFF00;
     color: #333333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
 }
 
 /* Header Styling */
@@ -89,11 +89,6 @@ th {
 
 tr:nth-child(even) {
     background-color: #FFF8B0;
-}
-
-body {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
 }
 
 @keyframes fadeIn {

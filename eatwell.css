@@ -1,8 +1,12 @@
 /* CSS for Eat Well Community - Unified Color Scheme */
+<html lang="en">
 body {
-    background-color: #FFFF00 !important;
+    font-family: Arial, sans-serif;
+    background-color: #FFFF00; /* Bright yellow base color */
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
-
 
 /* Header Styling */
 header {
@@ -37,7 +41,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
 
 nav ul li {
     display: inline;

@@ -1,5 +1,4 @@
 /* CSS for Eat Well Community - Unified Color Scheme */
-<html lang="en">
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFF00; /* Bright yellow base color */
@@ -28,19 +27,11 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
 
 nav ul li {
     display: inline;
@@ -95,17 +86,6 @@ th {
 tr:nth-child(even) {
     background-color: #FFF8B0;
 }
-
-body {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 
 /* Contact Page Form */
 form {

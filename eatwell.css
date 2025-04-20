@@ -1,10 +1,9 @@
 /* Eat Well Community - Unified Color Scheme */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFF00; /* Bright yellow */
+    background-color: #FFFF00;
     color: #333333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    opacity: 1;
 }
 
 /* Header */
@@ -51,9 +50,18 @@ nav ul li a:hover {
 }
 
 /* Main Content */
-main {
-    padding: 30px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
 
 section {
     background-color: #FFFFFF;

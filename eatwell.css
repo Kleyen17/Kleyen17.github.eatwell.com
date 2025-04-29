@@ -18,26 +18,24 @@ body {
 
 #wrapper {
     display: flex;
-    flex-direction: row; /* Aligns main content and sidebar horizontally */
-    justify-content: space-between; /* Creates even spacing between elements */
-    width: 100%; /* Ensures wrapper spans the full width of the page */
+    flex-direction: column; /* Stacks elements vertically */
+    width: 100%; /* Ensures full-width layout */
+    margin: 0 auto; /* Centers the content horizontally */
 }
+
 
 main {
     display: flex;
     flex-direction: column; /* Keeps overall layout vertical */
-     justify-content: space-between; /* Adds spacing */
-    align-items: flex-start; /* Aligns items at the top */
-}
-
-#content-wrapper {
-    display: flex;
-    flex-direction: row; /* Allows sections and sidebar to align horizontally */
+    align-items: flex-start; /* Aligns items to the left/top */
 }
 
 aside {
+    float: right; /* Positions sidebar on the right */
     width: 25%; /* Sidebar width */
+    margin: 0 20px; /* Adds spacing around the sidebar */
 }
+
 
 section {
     width: 70%; /* Main content width */

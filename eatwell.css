@@ -60,6 +60,12 @@ nav ul li a:hover {
     transform: scale(1.1); /* Slightly enlarges on hover */
 }
 
+#wrapper, section, main {
+    width: 90%; /* Allows content to stretch closer to the edges */
+    max-width: 1200px; /* Limits width on larger screens */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
 
 /* Sections */
 section {

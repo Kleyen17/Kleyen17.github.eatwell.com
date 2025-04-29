@@ -24,17 +24,20 @@ body {
 }
 
 main {
-    width: 70%; /* Makes main content take up most of the space */
-    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Aligns sidebar and sections horizontally */
+    justify-content: space-between; /* Adds spacing */
+    align-items: flex-start; /* Aligns items at the top */
 }
 
 aside {
-    width: 25%; /* Sets sidebar width */
-    padding: 20px;
-    background-color: #FFE8C1;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 25%; /* Sidebar width */
 }
+
+section {
+    width: 70%; /* Main content width */
+}
+
 
 
 /* Header */

@@ -16,15 +16,26 @@ body {
     justify-content: center;
 }
 
-aside {
-    width: 25%;
-    padding: 20px;
-    background-color: #FFE8C1; /* Light beige for contrast */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    float: left;
-    margin: 20px;
+#wrapper {
+    display: flex;
+    flex-direction: row; /* Aligns main content and sidebar horizontally */
+    justify-content: space-between; /* Creates even spacing between elements */
+    width: 100%; /* Ensures wrapper spans the full width of the page */
 }
+
+main {
+    width: 70%; /* Makes main content take up most of the space */
+    padding: 20px;
+}
+
+aside {
+    width: 25%; /* Sets sidebar width */
+    padding: 20px;
+    background-color: #FFE8C1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Header */
 header {
@@ -81,13 +92,6 @@ nav ul li a:hover {
     color: #333;
     transform: scale(1.1); /* Slightly enlarges on hover */
 }
-
-#wrapper, section, main {
-    width: 90%; /* Allows content to stretch closer to the edges */
-    max-width: 1200px; /* Limits width on larger screens */
-    margin: 0 auto; /* Centers the content horizontally */
-}
-
 
 /* Sections */
 section {

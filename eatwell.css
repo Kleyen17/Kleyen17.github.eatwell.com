@@ -16,6 +16,16 @@ body {
     justify-content: center;
 }
 
+aside {
+    width: 25%;
+    padding: 20px;
+    background-color: #FFE8C1; /* Light beige for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    float: left;
+    margin: 20px;
+}
+
 /* Header */
 header {
     text-align: center;

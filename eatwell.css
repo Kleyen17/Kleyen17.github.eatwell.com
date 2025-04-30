@@ -35,10 +35,13 @@ section {
     border: 2px solid var(--accent-color);
     border-radius: 8px;
     padding: 30px; /* Increased padding for more spacing */
-    margin-bottom: 20px; /* Adds space between sections */
     width: 90%; /* Slightly larger width for wider appearance */
     max-width: 1200px; /* Limit size on larger screens */
     box-shadow: 0 6px 10px rgba(0,0,0,0.2); /* Deeper shadow for emphasis */
+    border-bottom: 5px dotted var(--accent-color);
+    margin-bottom: 30px;
+}
+
 }
 
 aside {

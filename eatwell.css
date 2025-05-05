@@ -42,15 +42,13 @@ section {
     margin-bottom: 30px;
 }
 
-}
-
 aside {
     background-color: #FFE8C1;
     border-radius: 8px;
     padding: 30px; /* Increased padding for sidebar too */
     margin-bottom: 20px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.2); /* Matches section styling */
-    width: 90%; /* Sidebar matches the size increase */
+    width: 30%; /* Sidebar matches the size increase */
 }
 
 
